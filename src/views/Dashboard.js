@@ -21,6 +21,7 @@ import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
 
+import ReactSpeedometer from "react-d3-speedometer"
 // reactstrap components
 import {
   Button,
@@ -194,6 +195,43 @@ function Dashboard(props) {
               </CardBody>
             </Card>
           </Col>
+        </Row>
+        <Row>
+
+          <ReactSpeedometer
+              value={777}
+              currentValueText="Happiness Level"
+              customSegmentLabels={[
+                {
+                  text: "Very Bad",
+                  position: "INSIDE",
+                  color: "#555",
+                },
+                {
+                  text: "Bad",
+                  position: "INSIDE",
+                  color: "#555",
+                },
+                {
+                  text: "Ok",
+                  position: "INSIDE",
+                  color: "#555",
+                  fontSize: "19px",
+                },
+                {
+                  text: "Good",
+                  position: "INSIDE",
+                  color: "#555",
+                },
+                {
+                  text: "Very Good",
+                  position: "INSIDE",
+                  color: "#555",
+                },
+              ]}
+              needleTransitionDuration={1000}
+              needleTransition="easeCircleInOut"
+          />
         </Row>
         <Row>
           <Col lg="6" md="12">

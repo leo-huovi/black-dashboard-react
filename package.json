@@ -13,6 +13,7 @@
     "prop-types": "15.8.1",
     "react": ">=16.8.0",
     "react-chartjs-2": "3.3.0",
+    "react-d3-speedometer": "^2.2.1",
     "react-dom": ">=16.8.0",
     "react-notification-alert": "0.0.13",
     "react-router-dom": "6.11.1",
